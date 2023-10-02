@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Enter your CSS Code here. */
+      .box1 {
+        display: block;
+        background-color: orange;
+      }
+      .flex-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .absolute-position {
+        position: absolute;
+        top: 20px;
+        left: 100px;
+      }
+      @media screen and (max-width: 768px) {
+        body {
+          background-color: #c3b3a3;
+        }
+      }
+      .transition{
+        transition:background-color 0.3s;
+      }
+      .transition:hover{
+        background-color: #ff0000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Task-1 -->
+    <div id="box1" class="box">This is a box.</div>
+    <br /><br />
+
+    <!-- Task-2 -->
+    <div class="container flex-container">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+    </div>
+    <br /><br />
+
+    <!-- Task-3 -->
+    <div id="box2" class="absolute-position">
+      This is an absolute positioned box.
+    </div>
+    <br /><br />
+
+    <!-- Task-4 -->
+    <div>
+      Responsiveness using Media Query. It changes color when screen size is
+      changed less than 768px.
+    </div>
+    <br /><br />
+
+    <!-- Task-5 -->
+    <div id="box3" class="transition">Hover over me</div>
+  </body>
+  <br /><br />
+</html>
